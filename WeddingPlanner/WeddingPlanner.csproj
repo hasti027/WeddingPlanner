@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46C3D08B-3742-45DD-BDC6-2CC6F9DE92A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WeddingPlanner</RootNamespace>
+    <AssemblyName>WeddingPlanner</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.0.0.0\lib\net35-Client\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.1.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\iTextSharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="textbox">
+      <HintPath>..\..\UserControl\textbox\textbox\bin\Debug\textbox.exe</HintPath>
+    </Reference>
+    <Reference Include="UserButton">
+      <HintPath>..\..\UserButton\UserButton\bin\Debug\UserButton.exe</HintPath>
+    </Reference>
+    <Reference Include="WinFormAnimation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.0.0.0\lib\net45\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booking.Designer.cs">
+      <DependentUpon>booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar.Designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="connect.cs" />
+    <Compile Include="custombooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custombooking.Designer.cs">
+      <DependentUpon>custombooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomizationThingsDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomizationThingsDetails.Designer.cs">
+      <DependentUpon>CustomizationThingsDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard1.Designer.cs">
+      <DependentUpon>dashboard1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard2.Designer.cs">
+      <DependentUpon>dashboard2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard3.Designer.cs">
+      <DependentUpon>dashboard3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="defult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="defult.Designer.cs">
+      <DependentUpon>defult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dispalycustombooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dispalycustombooking.Designer.cs">
+      <DependentUpon>dispalycustombooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="displaybooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="displaybooking.Designer.cs">
+      <DependentUpon>displaybooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayCustomizationThingsDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayCustomizationThingsDetails.Designer.cs">
+      <DependentUpon>DisplayCustomizationThingsDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="displaypackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="displaypackage.Designer.cs">
+      <DependentUpon>displaypackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menutransition1.cs" />
+    <Compile Include="password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="password.Designer.cs">
+      <DependentUpon>password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="resetpassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resetpassword.Designer.cs">
+      <DependentUpon>resetpassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splashscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splashscreen.Designer.cs">
+      <DependentUpon>Splashscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="state.cs" />
+    <Compile Include="venuebooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="venuebooking.Designer.cs">
+      <DependentUpon>venuebooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="packagesform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="packagesform.Designer.cs">
+      <DependentUpon>packagesform.cs</DependentUpon>
+    </Compile>
+    <Compile Include=".cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RJTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RJTextBox.Designer.cs">
+      <DependentUpon>RJTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="serivesform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serivesform.Designer.cs">
+      <DependentUpon>serivesform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UITypeEditor.cs" />
+    <Compile Include="usercomboboxcs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WeddingPlannerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WeddingPlannerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WeddingPlannerDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WeddingPlannerDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="booking.resx">
+      <DependentUpon>booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custombooking.resx">
+      <DependentUpon>custombooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomizationThingsDetails.resx">
+      <DependentUpon>CustomizationThingsDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard1.resx">
+      <DependentUpon>dashboard1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard2.resx">
+      <DependentUpon>dashboard2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard3.resx">
+      <DependentUpon>dashboard3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="defult.resx">
+      <DependentUpon>defult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dispalycustombooking.resx">
+      <DependentUpon>dispalycustombooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="displaybooking.resx">
+      <DependentUpon>displaybooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayCustomizationThingsDetails.resx">
+      <DependentUpon>DisplayCustomizationThingsDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="displaypackage.resx">
+      <DependentUpon>displaypackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="password.resx">
+      <DependentUpon>password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resetpassword.resx">
+      <DependentUpon>resetpassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splashscreen.resx">
+      <DependentUpon>Splashscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="venuebooking.resx">
+      <DependentUpon>venuebooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="packagesform.resx">
+      <DependentUpon>packagesform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RJTextBox.resx">
+      <DependentUpon>RJTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serivesform.resx">
+      <DependentUpon>serivesform.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WeddingPlannerDataSet.xsc">
+      <DependentUpon>WeddingPlannerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WeddingPlannerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WeddingPlannerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WeddingPlannerDataSet.xss">
+      <DependentUpon>WeddingPlannerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WeddingPlannerDataSet1.xsc">
+      <DependentUpon>WeddingPlannerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="WeddingPlannerDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WeddingPlannerDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WeddingPlannerDataSet1.xss">
+      <DependentUpon>WeddingPlannerDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\WeddingPlanner.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database\WeddingPlanner_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>WeddingPlanner.mdf</DependentUpon>
+    </Content>
+    <Content Include="iTextSharp\itextsharp.dll" />
+    <None Include="Resources\pixelcut-export %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
